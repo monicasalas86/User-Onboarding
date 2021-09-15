@@ -4,6 +4,7 @@ import Form from './Form';
 import schema from './formSchema';
 import axios from 'axios';
 import * as yup from 'yup';
+import Member from './Member';
 
 const initailFormValues = {
   name: '',
@@ -87,6 +88,13 @@ function App() {
         disabled={disabled}
         errors={formErrors}
       />
+      {/* {
+        members.map(member => {
+          return(
+            <Member key={member.id} details={member} />
+          )
+        })
+      } */}
     </div>
   );
 }
