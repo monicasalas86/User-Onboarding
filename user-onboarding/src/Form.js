@@ -69,7 +69,7 @@ export default function Form(props) {
                             onChange={onChange}
                         />
                     </label>
-                    <button disabled={disabled}>Sumbit</button>
+                    <button id='submitBtn' disabled={disabled}>Sumbit</button>
                 </div>
             </form>
         </StyledForm>
